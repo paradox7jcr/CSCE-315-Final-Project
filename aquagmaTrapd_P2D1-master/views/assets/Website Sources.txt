@@ -1,0 +1,12 @@
+Game Assets:
+Gaurav Munjal: http://opengameart.org/content/universal-lpc-sprite-male-01
+Hyptosis: http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
+
+Spike sound - jamesabdulrahman: https://freesound.org/people/jamesabdulrahman/sounds/320521/
+Mud sound - JanKoehl: https://freesound.org/people/JanKoehl/sounds/85604/
+Dart sound - pfranzen: https://freesound.org/people/pfranzen/sounds/187707/
+Wire sound - qubodup: https://freesound.org/people/qubodup/sounds/332056/
+Net sound - RSilveira_88: https://freesound.org/people/RSilveira_88/sounds/216244/
+
+Game Engine: 
+http://phaser.io

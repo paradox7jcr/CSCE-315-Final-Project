@@ -1,0 +1,11 @@
+{
+  "name": "trapd-server",
+  "version": "1.0.0",
+  "description": "trapd-server!",
+  "main": "views/index.html",
+  "author": "Team Aquagma",
+  "dependencies": {
+    "express": "^4.10.2",
+    "socket.io": "^1.4.5"
+  }
+}

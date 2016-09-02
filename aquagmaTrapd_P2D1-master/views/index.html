@@ -1,0 +1,76 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>Trapd</title>
+	<!--All files that should be included should be entered here-->
+	<script type="text/javascript" src="js/socket.io.js"></script>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+	<script type="text/javascript" src="js/mainMenu.js"></script>
+	<script type="text/javascript" src="js/credits.js"></script>
+	<script type="text/javascript" src="js/tutorial.js"></script>
+	<script type="text/javascript" src="js/victory.js"></script>
+	<script type="text/javascript" src="js/defeat.js"></script>
+	<script type="text/javascript" src="js/loadingStates/loading.js"></script>
+	<script type="text/javascript" src="js/loadingStates/MazeRunnerLoading.js"></script>
+	<script type="text/javascript" src="js/loadingStates/TrapMasterLoading.js"></script>
+	<script type="text/javascript" src="js/mazerunner/MazeRunnerMapSelect.js"></script>
+	<script type="text/javascript" src="js/mazerunner/MazeRunnerItems.js"></script>
+	<script type="text/javascript" src="js/mazerunner/MazeRunnerMap1.js"></script>
+	<script type="text/javascript" src="js/mazerunner/MazeRunnerMap2.js"></script>
+	<script type="text/javascript" src="js/mazerunner/MazeRunnerMap3.js"></script>
+	<script type="text/javascript" src="js/trapmaster/TrapMasterMapSelect.js"></script>
+	<script type="text/javascript" src="js/trapmaster/TrapMasterMap1.js"></script>
+	<script type="text/javascript" src="js/trapmaster/TrapMasterMap2.js"></script>
+	<script type="text/javascript" src="js/trapmaster/TrapMasterMap3.js"></script>
+	<script type="text/javascript" src="js/trapmaster/SpectateMap1.js"></script>
+	<script type="text/javascript" src="js/trapmaster/SpectateMap2.js"></script>
+	<script type="text/javascript" src="js/trapmaster/SpectateMap3.js"></script>
+	
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+    <script type="text/javascript">
+    var socket = io();
+    var PLAYERS, QUEUE, MAP;
+		(function() {
+
+				//Create a new game that fills the screen
+				//game = new Phaser.Game(window.innerWidth * window.devicePixelRatio *2, window.innerHeight * window.devicePixelRatio *2, Phaser.AUTO);
+				this.game = new this.Phaser.Game(4000, 2000, this.Phaser.AUTO);
+				
+				//Add all states
+					//Main States
+				this.game.state.add("MainMenu", this.MainMenu);
+				this.game.state.add("Credits", this.Credits);
+				this.game.state.add("Loading", this.Loading);
+				this.game.state.add("Tutorial", this.Tutorial);
+					//Runner States
+				this.game.state.add("MazeRunnerItems", this.MazeRunnerItems);
+				this.game.state.add("MazeRunnerLoading", this.MazeRunnerLoading);
+				this.game.state.add("MazeRunnerMap1", this.MazeRunnerMap1);
+				this.game.state.add("MazeRunnerMap2", this.MazeRunnerMap2);
+				this.game.state.add("MazeRunnerMap3", this.MazeRunnerMap3);
+					//Trapper States
+				this.game.state.add("TrapMasterMap1", this.TrapMasterMap1);
+				this.game.state.add("TrapMasterMap2", this.TrapMasterMap2);
+				this.game.state.add("TrapMasterMap3", this.TrapMasterMap3);
+				this.game.state.add("TrapMasterMapSelect", this.TrapMasterMapSelect);
+				this.game.state.add("TrapMasterLoading", this.TrapMasterLoading);
+				this.game.state.add("SpectateMap1", this.SpectateMap1);
+				this.game.state.add("SpectateMap2", this.SpectateMap2);
+				this.game.state.add("SpectateMap3", this.SpectateMap3);
+					//End States
+				this.game.state.add("Victory", this.Victory);
+				this.game.state.add("Defeat", this.Defeat);
+
+				//Start the first state
+				this.game.state.start("MainMenu");
+		})();
+    </script>
+</head>
+<body>
+</body>
+</html>
