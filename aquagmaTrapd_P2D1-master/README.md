@@ -1,4 +1,11 @@
 # aquagmaTrapd_V1
+
+Created by Team Aquagma - Reid Shultz, Josh Kutsch, Jackie Gonzalez, Andrew Schwift
+
+Primary Programmers - Reid Shultz and Josh Kutsch
+Visual Design - Jackie Gonzalez
+PR and Testing - Andrew Schwift
+
 Multiplayer Web Game, Project 2 for CSCE315
 
 ### Idea Mâché: [here] (https://ideamache.ecologylab.net/v/tu1VcVFR9Z/)
